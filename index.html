@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yuji Z. Hashimoto – Criminologist &amp; social psychologist</title>
+<meta name="description" content="Yuji Z. Hashimoto, criminologist and social psychologist in Switzerland: comparative criminology, criminal justice statistics, survey methods and victimisation research.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔎</text></svg>">
+<style>
+  :root {
+    color-scheme: light;
+    --paper: #f6f7f5;
+    --ink: #1c2630;
+    --muted: #5a6570;
+    --rule: #d6dbdf;
+    --accent: #1d5c70;
+    --accent-soft: #e3edf0;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --paper: #151a1f;
+      --ink: #e4e8ec;
+      --muted: #9aa5af;
+      --rule: #2c353d;
+      --accent: #7bb8cb;
+      --accent-soft: #1e2b31;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 1.0625rem/1.6 var(--sans);
+  }
+  a { color: var(--accent); text-underline-offset: 0.18em; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .page {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @media (min-width: 900px) {
+    .page { grid-template-columns: 19rem 1fr; gap: 5rem; padding-top: 5rem; }
+    .id { position: sticky; top: 4rem; align-self: start; }
+  }
+
+  /* Identity column */
+  .portrait {
+    width: 7.5rem; height: 7.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background: var(--accent-soft);
+  }
+  .monogram {
+    width: 7.5rem; height: 7.5rem; border-radius: 50%;
+    display: none; place-items: center;
+    background: var(--accent-soft); color: var(--accent);
+    font: 600 2.2rem/1 var(--serif);
+  }
+  h1 {
+    font: 500 clamp(2.4rem, 5vw, 3.1rem)/1.05 var(--serif);
+    letter-spacing: -0.01em;
+    margin: 1.5rem 0 0.75rem;
+  }
+  .role { font-size: 1.1rem; color: var(--muted); margin: 0 0 1.5rem; }
+  .now { border-left: 3px solid var(--accent); padding-left: 1rem; margin: 0 0 1.75rem; }
+  .now p { margin: 0 0 0.5rem; line-height: 1.45; }
+  .now span { display: block; color: var(--muted); font-size: 0.95rem; }
+  .links { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.4rem; }
+  .links a { font-weight: 500; }
+
+  /* Content column */
+  main { max-width: 42rem; }
+  section + section { margin-top: 3.5rem; }
+  h2 {
+    font: 500 1.6rem/1.2 var(--serif);
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lead p { font: 1.2rem/1.65 var(--serif); margin: 0 0 1.1rem; }
+
+  .topics { display: grid; gap: 1.5rem; }
+  .topics h3 { font: 600 1.05rem/1.3 var(--sans); margin: 0 0 0.3rem; }
+  .topics p { margin: 0; color: var(--muted); }
+
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .timeline li:first-child { border-top: 0; padding-top: 0; }
+  .when { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.95rem; padding-top: 0.1rem; }
+  .timeline h3 { font: 600 1.05rem/1.35 var(--sans); margin: 0; }
+  .where { margin: 0.1rem 0 0; color: var(--muted); }
+  .timeline .note { margin: 0.5rem 0 0; }
+  @media (max-width: 520px) {
+    .timeline li { grid-template-columns: 1fr; gap: 0.2rem; }
+  }
+
+  .langs { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 0.6rem 1.5rem; }
+  .langs span { color: var(--muted); display: block; font-size: 0.95rem; }
+
+  footer { margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside class="id">
+    <img class="portrait" src="photo.jpg" alt="Portrait of Yuji Z. Hashimoto"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+    <div class="monogram" aria-hidden="true">YH</div>
+
+    <h1>Yuji Z. Hashimoto</h1>
+    <p class="role">Criminologist and social psychologist, Switzerland</p>
+
+    <div class="now">
+      <p>SNSF Research Fellow<span>University of Fribourg</span></p>
+      <p>Hearing Officer<span>State Secretariat for Migration (SEM)</span></p>
+      <p>PhD candidate in Criminology<span>University of Lausanne</span></p>
+    </div>
+
+    <ul class="links">
+      <li><a href="https://orcid.org/0000-0003-0031-8855">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=fctYVmkAAAAJ">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/yuji-z-hashimoto/">LinkedIn</a></li>
+      <!-- Optional: add a contact email -->
+      <!-- <li><a href="mailto:you@example.com">Email</a></li> -->
+    </ul>
+  </aside>
+
+  <main>
+    <section class="lead" aria-label="About">
+      <p>I study anti-social behaviour in its social and cultural context, and what it means for policy and practice. My work is comparative: across countries, across criminal justice systems, and across cultures.</p>
+      <p>I am currently an SNSF Research Fellow at the University of Fribourg, working on PREVICT-SW, a participatory project on preventing violence against sex workers. I am also a Hearing Officer at the State Secretariat for Migration, where I conduct hearings and draft decisions on asylum applications.</p>
+      <p>I lean towards quantitative methods and survey design, and I also work with qualitative data. My own background is Brazilian, Italian, Japanese and Swiss, which shapes how I approach comparisons.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="topics">
+        <div>
+          <h3>Violence against sex workers</h3>
+          <p>PREVICT-SW, a quasi-experimental participatory study on victimisation and its prevention, University of Fribourg.</p>
+        </div>
+        <div>
+          <h3>European penal statistics</h3>
+          <p>SPACE, the Council of Europe Annual Penal Statistics on prisons and probation, and the European Sourcebook of Crime and Criminal Justice Statistics.</p>
+        </div>
+        <div>
+          <h3>Religion and well-being</h3>
+          <p>Religious practice, self-identification and well-being among older people in Switzerland, with the Institute for Social Sciences of Religions, University of Lausanne.</p>
+        </div>
+        <div>
+          <h3>Survey methodology</h3>
+          <p>Questionnaire design and response rates, including online evaluations in higher education.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem">Publications are listed on <a href="https://orcid.org/0000-0003-0031-8855">ORCID</a> and <a href="https://scholar.google.com/citations?user=fctYVmkAAAAJ">Google Scholar</a>.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2025–now</span>
+          <div><h3>SNSF Research Fellow</h3><p class="where">University of Fribourg</p></div>
+        </li>
+        <li>
+          <span class="when">2024–now</span>
+          <div><h3>Hearing Officer</h3><p class="where">State Secretariat for Migration (SEM), Bern</p>
+          <p class="note">Hearings on asylum applications, drafting decisions.</p></div>
+        </li>
+        <li>
+          <span class="when">2024–2025</span>
+          <div><h3>Scientific collaborator and research assistant</h3><p class="where">Institute for Social Sciences of Religions, University of Lausanne</p></div>
+        </li>
+        <li>
+          <span class="when">2024</span>
+          <div><h3>Scientific collaborator</h3><p class="where">Centre romand de recherche en criminologie, University of Neuchâtel</p></div>
+        </li>
+        <li>
+          <span class="when">2018–2023</span>
+          <div><h3>Graduate research and teaching assistant</h3><p class="where">School of Criminal Justice, University of Lausanne</p>
+          <p class="note">Data collection, database management and annual reports for SPACE; questionnaire design for internal and external projects; teaching assistance and thesis supervision.</p></div>
+        </li>
+        <li>
+          <span class="when">2018</span>
+          <div><h3>Research intern, then research assistant</h3><p class="where">Teaching Support Centre, HEP Vaud</p>
+          <p class="note">Literature review and recommendations on increasing response rates to online teaching evaluations.</p></div>
+        </li>
+        <li>
+          <span class="when">2018</span>
+          <div><h3>Student research assistant</h3><p class="where">School of Criminal Justice, University of Lausanne</p>
+          <p class="note">New database for the European Sourcebook; development of the LINCS project linking international criminal statistics.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2018–now</span>
+          <div><h3>PhD in Criminology (in progress)</h3><p class="where">University of Lausanne</p></div>
+        </li>
+        <li>
+          <span class="when">2016–2018</span>
+          <div><h3>MSc in Psychology, social and intercultural psychology</h3><p class="where">University of Lausanne</p>
+          <p class="note">Thesis on whistleblowing intentions in police corruption, supervised by Prof. Fabrizio Butera. Faculty award for excellent results.</p></div>
+        </li>
+        <li>
+          <span class="when">2014–2017</span>
+          <div><h3>MLaw in Criminology and Security</h3><p class="where">University of Lausanne</p>
+          <p class="note">Thesis on transport infrastructure, housing and residential burglary in Switzerland, commissioned by the Federal Statistical Office and supervised by Prof. Marcelo F. Aebi.</p></div>
+        </li>
+        <li>
+          <span class="when">2011–2014</span>
+          <div><h3>BSc in Psychology</h3><p class="where">University of Geneva</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="memberships">
+      <h2>Memberships</h2>
+      <ol class="timeline">
+        <li><span class="when">2023–now</span><div><h3>Founding member</h3><p class="where">European Network for Open Criminology, ESC working group</p></div></li>
+        <li><span class="when">2020–now</span><div><h3>Committee member and webmaster</h3><p class="where">CrimiNES, Swiss association of criminologists</p></div></li>
+        <li><span class="when">2018–now</span><div><h3>Expert group member</h3><p class="where">European Sourcebook of Crime and Criminal Justice Statistics</p></div></li>
+        <li><span class="when">2015–now</span><div><h3>Member</h3><p class="where">European Society of Criminology</p></div></li>
+      </ol>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <ul class="langs">
+        <li>Portuguese<span>Native</span></li>
+        <li>English<span>Full professional</span></li>
+        <li>French<span>Full professional</span></li>
+        <li>Italian<span>Full professional</span></li>
+        <li>German<span>Elementary</span></li>
+        <li>Spanish<span>Elementary</span></li>
+      </ul>
+    </section>
+
+    <footer>Last updated November 2026</footer>
+  </main>
+
+</div>
+</body>
+</html>
